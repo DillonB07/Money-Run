@@ -46,7 +46,10 @@ class Game:
         Selection menu
         """
         clear()
-        write(f'-----MONEY RUN-----\n\nWelcome to Money Run.\nWhat would you like to do?\n\n1. Get started\n2. View controls\n3. Extra info\n|\nV')
+        write(
+            '-----MONEY RUN-----\n\nWelcome to Money Run.\nWhat would you like to do?\n\n1. Get started\n2. View controls\n3. Extra info\n|\nV'
+        )
+
         try:
             choice = int(input())
             if choice == 1:
@@ -98,12 +101,15 @@ class Game:
         Start the game
         """
         clear()
-        write(f'Welcome to Money Run!\n\nPress enter to start!')
+        write('Welcome to Money Run!\n\nPress enter to start!')
         input()
         clear()
-        write(f'You wake up and find yourself inside a mysterious mansion after being unconscious for a few hours.')
+        write(
+            'You wake up and find yourself inside a mysterious mansion after being unconscious for a few hours.'
+        )
+
         time.sleep(2)
-        write(f'You notice a note on the floor, so you pick it up and start to read...')
+        write('You notice a note on the floor, so you pick it up and start to read...')
         time.sleep(1)
         write(f'"Welcome {self.name} to our mansion!\nHere, your goal is to get out of the house and into the garden. There are many ways to get there, so have fun!\nOh also, there\'s a prize if you manage to escape\n\nYour mysterious benefactors"\n\n\n\n')
 
